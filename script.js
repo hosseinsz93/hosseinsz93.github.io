@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Dark mode toggle
 const themeToggle = document.createElement('button');
 themeToggle.textContent = '🌓 Toggle Theme';
@@ -16,3 +17,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+=======
+hi
+>>>>>>> c6aff4e17a46edeb15dac8f488d631ab6e0a360f
