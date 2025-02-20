@@ -1,67 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hossein (Aria) Seyedzadeh - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hossein S. Zadeh</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Hossein's personal website">
+  <meta name="keywords" content="computational mechanics, FSI, SPH" />
+  <meta name="author" content="Hossein S. Zadeh">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="header">
-        <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img">
-        <h1>Hossein (Aria) Seyedzadeh</h1>
-        <p>PhD student | Research assistant | CFD and HPC</p>
+
+<body id="page-top" class="index">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="brand" href="#page-top">Hossein S. Zadeh</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-img">
+      <div class="intro-text">
+        <h1>Hossein S. Zadeh</h1>
+        <p>PhD Candidate in Computational Mechanics</p>
         <div class="social-links">
-            <a href="https://github.com/hosseinsz93" target="_blank">
-                <img src="assets/images/github-icon.svg" alt="GitHub">
-            </a>
-            <a href="https://linkedin.com/in/hossein-s-zadeh" target="_blank">
-                <img src="assets/images/linkedin-icon.svg" alt="LinkedIn">
-            </a>
+          <a href="https://github.com/hosseinsz93" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/hossein-s-zadeh" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>I'm a full-stack developer with 3 years of experience...</p>
-        <div class="skills">
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a PhD candidate specializing in computational mechanics with focus on...</p>
+      <div class="skills">
+        <span class="skill-tag">SPH</span>
+        <span class="skill-tag">FEM</span>
+        <span class="skill-tag">FSI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research" class="section">
+    <div class="container">
+      <h2>Research Interests</h2>
+      <div class="research-grid">
+        <div class="research-card">
+          <h3>Fluid-Structure Interaction</h3>
+          <p>Developing particle-based methods for extreme FSI scenarios...</p>
         </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <!-- Project cards go here -->
+        <div class="research-card">
+          <h3>Material Failure</h3>
+          <p>Phase-field modeling of brittle fracture...</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="blog">
-        <h2>Latest Posts</h2>
-        <div class="blog-posts">
-            <article class="post">
-                <h3>Post Title</h3>
-                <date>2023-07-20</date>
-                <p>Excerpt...</p>
-                <a href="post.html">Read More</a>
-            </article>
+  <!-- Publications Section -->
+  <section id="publications" class="section">
+    <div class="container">
+      <h2>Selected Publications</h2>
+      <div class="publications-list">
+        <div class="publication-item">
+          <h3>SPH-Based FSI Framework for Phase-Field Modeling</h3>
+          <p>Journal of Computational Mechanics, 2023</p>
+          <a href="#" class="pub-link">View Abstract</a>
         </div>
-    </section>
+        <!-- Add more publications -->
+      </div>
+    </div>
+  </section>
 
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="email" name="email" placeholder="Your email">
-        <textarea name="message" placeholder="Your message"></textarea>
-        <button type="submit">Send</button>
-    </form>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <p>© 2025 Hossein (Aria) Seyedzadeh</p>
-        <a href="assets/resume.pdf" download>Download Resume</a>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Hossein S. Zadeh</p>
+      <a href="assets/resume.pdf" download>Download CV</a>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
