@@ -1,22 +1,15 @@
-<<<<<<< HEAD
-// Dark mode toggle
+// Remove merge conflicts and improve dark mode
 const themeToggle = document.createElement('button');
 themeToggle.textContent = '🌓 Toggle Theme';
-document.body.prepend(themeToggle);
+themeToggle.classList.add('theme-toggle');
+document.querySelector('.header').appendChild(themeToggle);
 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme');
+    localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
 });
 
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-=======
-hi
->>>>>>> c6aff4e17a46edeb15dac8f488d631ab6e0a360f
+// Set initial theme from localStorage
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-theme');
+}
