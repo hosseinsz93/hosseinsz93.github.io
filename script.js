@@ -13,3 +13,28 @@ themeToggle.addEventListener('click', () => {
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-theme');
 }
+
+// Add analytics tracking
+window.addEventListener('DOMContentLoaded', (event) => {
+    // Google Analytics
+    if (window.location.hostname !== 'localhost') {
+        const gaScript = document.createElement('script');
+        gaScript.async = true;
+        gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX';
+        document.head.appendChild(gaScript);
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXX');
+    }
+    
+    // Add copy DOI functionality
+    document.querySelectorAll('.doi-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            navigator.clipboard.writeText(link.textContent);
+            alert('DOI copied to clipboard!');
+        });
+    });
+});
