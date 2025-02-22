@@ -86,8 +86,8 @@ input, textarea {
 
 /* Adjust profile picture size */
 .profile-img {
-    width: 120px;  /* Reduced from 150px */
-    height: 120px; /* Reduced from 150px */
+    width: 12px;  /* Reduced from 150px */
+    height: 12px; /* Reduced from 150px */
     max-width: 20vw; /* Prevent excessive size on mobile */
     border: 2px solid var(--primary-color); /* Thinner border */
 }
