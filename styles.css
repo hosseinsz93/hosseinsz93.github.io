@@ -84,38 +84,21 @@ input, textarea {
     color: #0077b5;
 }
 
-/* Adjust profile picture size */
-.profile-img {
-    width: 12px;  /* Reduced from 150px */
-    height: 12px; /* Reduced from 150px */
-    max-width: 20vw; /* Prevent excessive size on mobile */
-    border: 2px solid var(--primary-color); /* Thinner border */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
 }
 
-/* Social icons sizing */
 .social-links img {
-    width: 24px;  /* Reduced from 32px */
-    height: 24px; /* Reduced from 32px */
-    padding: 6px; /* Added padding for better touch targets */
-    transition: all 0.2s ease-in-out;
+    width: 32px;
+    height: 32px;
+    opacity: 0.9;
+    transition: transform 0.2s ease-in-out;
 }
 
-/* Optional: Add subtle background on hover */
-.social-links a:hover img {
-    transform: scale(1.15);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
-
-/* For mobile devices */
-@media (max-width: 480px) {
-    .profile-img {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .social-links img {
-        width: 20px;
-        height: 20px;
-    }
+.social-links img:hover {
+    transform: translateY(-2px);
+    opacity: 1;
 }
